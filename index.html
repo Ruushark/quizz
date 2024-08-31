@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    
+    <link rel="stylesheet" href="quiz.css">
+
+</head>
+<body>
+    <div class="quiz-container" id="start-page">
+        <h1><b>Codecrafter's Quiz</b></h1>
+        <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-page" style="display: none;">
+        <h1><b>Codecrafter's Quiz</b></h1>
+        <div id="quiz-box">
+            <div id="question-container"></div>
+            <div id="answer-buttons" class="btn-container"></div>
+            <div class="navigation">
+                <button id="previous-btn" class="btn" style="display: none;">Previous</button>
+                <button id="skip-btn" class="btn">Skip</button>
+                <button id="next-btn" class="btn" style="display: none;">Next</button>
+                <button id="submit-btn" class="btn" style="display: none;">Submit</button>
+                <button id="exit-btn" class="btn">Exit</button>
+            </div>
+        </div>
+        <div id="result-container" style="display: none;"></div>
+    </div>
+
+    <div class="quiz-container" id="results-page" style="display: none;">
+        <h1><b>Quiz Results</b></h1>
+        <div id="profile-info"></div>
+        <div id="results-details"></div>
+        <button id="exit-results-btn" class="btn">Exit</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
